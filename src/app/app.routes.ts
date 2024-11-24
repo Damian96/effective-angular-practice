@@ -15,4 +15,11 @@ export const routes: Routes = [
         (m) => m.CreationalOpsComponent
       ),
   },
+  {
+    path: 'rxjs/flattening-operators',
+    loadComponent: () =>
+      import('./rxjs/flattening-ops/flattening-ops.component').then(
+        (m) => m.FlatteningOpsComponent
+      ),
+  },
 ];
